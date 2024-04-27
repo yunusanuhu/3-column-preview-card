@@ -1,0 +1,99 @@
+body {
+    font-size: 15px;
+}
+h1 {
+    font-family: Lexend Deca;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;   
+}
+
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0px 0px 10px;
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 10px 10px 0px;
+}
+
+.card {
+    padding: 30px;
+    flex: 1;
+    max-width: 270px;
+}
+
+h1, p {
+color: hsl(0, 0%, 95%)
+}
+
+
+.btn {
+    background-color: hsl(0, 0%, 95%);
+    margin: 100px 0px 20px 0px;
+    padding: 1px 20px;
+    width: 100px;
+    border-radius: 25px;
+    text-align: center;
+    border: 3px solid white;
+
+}
+
+.sedan-btn p {
+    color: hsl(31, 77%, 52%);
+    
+}
+
+.suv-btn p {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury-btn p {
+    color:hsl(179, 100%, 13%);
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.btn:hover p {
+    color: hsl(0, 0%, 95%);
+}
+
+.attribution {
+    margin-top: 20px;
+}
+
+.attribution p {
+    color: black;
+    font-size: 1rem;
+}
+
+@media (max-width: 600px){
+    .container {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .sedan {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .luxury {
+        border-radius: 0px 0px 10px 10px;
+    }
+
+}
+
